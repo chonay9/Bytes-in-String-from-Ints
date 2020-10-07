@@ -1,0 +1,14 @@
+/*  SQl  */
+
+/* 
+-octet_length function is used to count the number of bytes in a specified string
+-to convert a string ::text or ::varchar
+*/
+
+select 
+  octet_length(number1::varchar) as octnum1,
+  octet_length(number2::varchar) as octnum2,
+  octet_length(number3::text) as octnum3,
+  octet_length(number4::text) as octnum4,
+  octet_length(number5::text) as octnum5
+from numbers;
